@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="android.view.View" />
+        <variable name ="item"
+            type ="model.ProfileItem" />
+        <variable
+            name="listener"
+            type="bindingadapter.ProfileAdapter.ProfileListener" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+       android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:onClick="@{() ->listener.onProfileCellListClicked(item)}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@mipmap/ic_launcher"
+            tools:src="@mipmap/ic_launcher"
+            android:layout_marginLeft="16dp" />
+        <TextView
+            android:id="@+id/tv_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@{item.name}"
+            app:layout_constraintStart_toEndOf="@id/imageView"
+            app:layout_constraintTop_toTopOf="@id/imageView"
+            tools:text="Sarayu Yadav"
+            android:layout_marginLeft="5dp" />
+        <TextView
+            android:id="@+id/tv_Age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@{item.age}"
+            app:layout_constraintStart_toEndOf="@id/imageView"
+            app:layout_constraintTop_toBottomOf="@id/tv_Name"
+            tools:text="25 Yrs"
+            android:layout_marginLeft="5dp" />
+        <TextView
+            android:id="@+id/tv_City"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{item.city}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imageView"
+            android:layout_marginEnd="16dp"
+            tools:text="Ranchi"
+            android:layout_marginRight="16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

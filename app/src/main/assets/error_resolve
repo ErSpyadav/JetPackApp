@@ -1,0 +1,22 @@
+
+1.Data Binding BR is not Found
+Solution:
+apply plugin: 'kotlin-android'
+    apply plugin: 'kotlin-android-extensions'
+    apply plugin: 'kotlin-kapt'
+
+abdroid{
+ dataBinding {
+        enabled = true
+    }
+    }
+2. Without calling findViewById. call directly by Id
+Solution :
+import kotlinx.android.synthetic.main.activity_main.*
+
+3.Cannot fit requested classes in a single dex file (# methods: 109441 > 65536)
+Sol :
+  defaultConfig {
+    multiDexEnabled true
+  }
+
