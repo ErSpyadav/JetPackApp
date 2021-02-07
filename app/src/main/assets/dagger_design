@@ -1,0 +1,5 @@
+
+Dagger Injection sub module to parent
+
+ InboxModule ->InboxFragmentProvider[ Module (InboxModule)] ->ActivityBuilderModule [Module (InboxFragmentProvider)]
+ ->ApplicationComponent(Component (all Modules))

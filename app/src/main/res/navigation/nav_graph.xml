@@ -23,6 +23,20 @@
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/CreateBookFragment" />
+<!--        <argument android:name="flag"-->
+<!--            app:argType="boolean"-->
+<!--            android:defaultValue="false"-->
+<!--            />-->
+    </fragment>
+    <fragment
+        android:id="@+id/CreateBookFragment"
+        android:name="com.example.myjetpackdemo.CreateBookFragment"
+        android:label="@string/create_book_fragment_label"
+        tools:layout="@layout/fragment_create_book">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_CreateBookFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
 </navigation>

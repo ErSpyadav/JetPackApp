@@ -107,12 +107,13 @@
                 android:textColor="@android:color/white"
                 android:typeface="normal" />
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/createFab"
-                android:layout_width="wrap_content"
-                android:layout_marginEnd="16dp"
-                android:layout_height="wrap_content"
-                app:fabSize="mini" />
+<!--            <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--                android:id="@+id/createFab"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:fabSize="mini"-->
+<!--                app:src="@drawable/icon_btn_floating" />-->
 
         </LinearLayout>
 
@@ -121,16 +122,16 @@
 
 
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floating_main"
-        android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:src="@drawable/icon_btn_floating"
-    android:layout_marginBottom="5dp"
-        android:layout_marginEnd="16dp"
-    app:layout_constraintBottom_toTopOf="@+id/button_first"
-    app:layout_constraintEnd_toEndOf="parent"
-    tools:ignore="MissingConstraints" />
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/floating_main"-->
+<!--        android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:src="@drawable/icon_btn_floating"-->
+<!--    android:layout_marginBottom="5dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--    app:layout_constraintBottom_toTopOf="@+id/button_first"-->
+<!--    app:layout_constraintEnd_toEndOf="parent"-->
+<!--    tools:ignore="MissingConstraints" />-->
 
     <Button
         android:id="@+id/button_first"
